@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     var interval = 1.0 // 타이머 간격 1초
     var count = 0   //
 
+    
     @IBOutlet var lblCurrentTime: UILabel!  // 현재시간 레이블 아울렛 변수
     @IBOutlet var lblPickerTime: UILabel!   // 선택시간 레이블 아울렛 변수
                                             // 레이블 아울렛 : 드로그 엔 드롭으로 생성한 변수
@@ -33,7 +34,9 @@ class ViewController: UIViewController {
         let formatter = DateFormatter()
         formatter.dateFormat = "yyyy-MM-dd HH:mm EEE"
         lblPickerTime.text = "선택시간 : " + formatter.string(from: datePickerView.date)
+
     }
+    
     @objc func updateTime() {   // 타이머가 동작할때 실행할 함수
 //        lblCurrentTime.text = String(count)
 //        count = count + 1
@@ -42,6 +45,8 @@ class ViewController: UIViewController {
         let formatter = DateFormatter() // 현재 날짜의 특정 부분만 추출할때 사용
         formatter.dateFormat = "yyyy-MM-dd HH:mm:ss EEE"
         lblCurrentTime.text = "현재시간: " + formatter.string(from: date as Date)
+        
+       
     }
     
 }
