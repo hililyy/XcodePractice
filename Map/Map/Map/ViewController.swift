@@ -23,15 +23,26 @@ class ViewController: UIViewController , CLLocationManagerDelegate{
         lblLocationInfo2.text = ""
         locationManager.delegate = self
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        // 정확도 최고로 설정
         locationManager.requestWhenInUseAuthorization()
+        // 사용자 어디 있는지 허가 요청 !
         locationManager.startUpdatingHeading()
+        // 위치 업데이트 시작
         myMap.showsUserLocation = true
+        // 맵뷰 보기 값을 true로 설정
     }
     func goLocation(latitudeValue: CLLocationDegrees, longitudeValue : CLLocationDegrees, delta span :Double) -> CLLocationCoordinate2D {
+        // 위도값 , 경도값 (CLLocationDegree는 도 단위로 지정된 위도, 경도 값임.), delta span : 범위..
+        
+        //지도를 나타내기 위해 아래  4개 함수 호출해야함!
         let pLocation = CLLocationCoordinate2DMake(latitudeValue, longitudeValue)
+        // 위도 및 경도 값을 좌표 데이터 구조 형식으로 형식화함. 위도와 경도값을 반환함
         let spanValue = MKCoordinateSpan(latitudeDelta: span, longitudeDelta: span)
+        // 지도의 확대/축소 수준을 나타냄. 값이 작아질수록 더 확대됨
         let pRegion = MKCoordinateRegion(center: pLocation, span: spanValue)
+        // 특정 위도와 경도를 중심으로 하는 직사각형의 지리적 영역.
         myMap.setRegion(pRegion,animated: true)
+        // 현재 보이는 영역을 설정
         return pLocation
     }
     
@@ -39,6 +50,7 @@ class ViewController: UIViewController , CLLocationManagerDelegate{
                        longitudeValue : CLLocationDegrees, delta span : Double, title
                         strTitle : String, subtitle strSubtitle:String) {
                 let annotation = MKPointAnnotation()
+                // 지도의 특정 지점에 적용
                 annotation.coordinate = goLocation(latitudeValue: latitudeValue, longitudeValue: longitudeValue, delta: span)
         annotation.title = strTitle
         annotation.subtitle = strSubtitle
@@ -47,10 +59,13 @@ class ViewController: UIViewController , CLLocationManagerDelegate{
     
     func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         let pLocation = locations.last
+        // 위치가 업데이트되면 마지막 위치값을 찾아낸다.
         _ = goLocation(latitudeValue: (pLocation?.coordinate.latitude)!, longitudeValue: (pLocation?.coordinate.longitude)!, delta: 0.01)
+        // 델타 0.01 100배 확대
         CLGeocoder().reverseGeocodeLocation(pLocation!, completionHandler: {
             (placemarks, error) -> Void in
             let pm = placemarks!.first
+            // placemarks의 첫 부분,,만 대입
             let country = pm!.country
             var address:String = country!
             if pm!.locality != nil{
