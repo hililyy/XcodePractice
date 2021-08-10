@@ -18,6 +18,17 @@
 		2A85328A26C24F8300A2AE35 /* DateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85328926C24F8300A2AE35 /* DateViewController.swift */; };
 		2A85328C26C25A4600A2AE35 /* ImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A85328B26C25A4600A2AE35 /* ImageViewController.swift */; };
 		2A85328E26C25B1700A2AE35 /* File.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A85328D26C25B1700A2AE35 /* File.png */; };
+		2A85329926C25E2400A2AE35 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85328F26C25E2300A2AE35 /* 3.jpg */; };
+		2A85329A26C25E2400A2AE35 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329026C25E2300A2AE35 /* 4.jpg */; };
+		2A85329B26C25E2400A2AE35 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329126C25E2400A2AE35 /* 1.jpg */; };
+		2A85329C26C25E2400A2AE35 /* 8.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329226C25E2400A2AE35 /* 8.jpg */; };
+		2A85329D26C25E2400A2AE35 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329326C25E2400A2AE35 /* 2.jpg */; };
+		2A85329E26C25E2400A2AE35 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329426C25E2400A2AE35 /* 5.jpg */; };
+		2A85329F26C25E2400A2AE35 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329526C25E2400A2AE35 /* 6.jpg */; };
+		2A8532A026C25E2400A2AE35 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329626C25E2400A2AE35 /* 9.jpg */; };
+		2A8532A126C25E2400A2AE35 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329726C25E2400A2AE35 /* 7.jpg */; };
+		2A8532A226C25E2400A2AE35 /* 10.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 2A85329826C25E2400A2AE35 /* 10.jpg */; };
+		2A8532A426C25E5900A2AE35 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8532A326C25E5900A2AE35 /* DatePickerViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +45,17 @@
 		2A85328926C24F8300A2AE35 /* DateViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = DateViewController.swift; path = ../../../DatePicker/DatePicker/DateViewController.swift; sourceTree = "<group>"; };
 		2A85328B26C25A4600A2AE35 /* ImageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageViewController.swift; sourceTree = "<group>"; };
 		2A85328D26C25B1700A2AE35 /* File.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = File.png; sourceTree = "<group>"; };
+		2A85328F26C25E2300A2AE35 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		2A85329026C25E2300A2AE35 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		2A85329126C25E2400A2AE35 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		2A85329226C25E2400A2AE35 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
+		2A85329326C25E2400A2AE35 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		2A85329426C25E2400A2AE35 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		2A85329526C25E2400A2AE35 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		2A85329626C25E2400A2AE35 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
+		2A85329726C25E2400A2AE35 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
+		2A85329826C25E2400A2AE35 /* 10.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 10.jpg; sourceTree = "<group>"; };
+		2A8532A326C25E5900A2AE35 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,12 +88,23 @@
 		2A85326826C10E9D00A2AE35 /* Tab */ = {
 			isa = PBXGroup;
 			children = (
+				2A85329126C25E2400A2AE35 /* 1.jpg */,
+				2A85329326C25E2400A2AE35 /* 2.jpg */,
+				2A85328F26C25E2300A2AE35 /* 3.jpg */,
+				2A85329026C25E2300A2AE35 /* 4.jpg */,
+				2A85329426C25E2400A2AE35 /* 5.jpg */,
+				2A85329526C25E2400A2AE35 /* 6.jpg */,
+				2A85329726C25E2400A2AE35 /* 7.jpg */,
+				2A85329226C25E2400A2AE35 /* 8.jpg */,
+				2A85329626C25E2400A2AE35 /* 9.jpg */,
+				2A85329826C25E2400A2AE35 /* 10.jpg */,
 				2A85328226C24E2900A2AE35 /* lamp_off.png */,
 				2A85328126C24E2900A2AE35 /* lamp_on.png */,
 				2A85328D26C25B1700A2AE35 /* File.png */,
 				2A85326926C10E9D00A2AE35 /* AppDelegate.swift */,
 				2A85326B26C10E9D00A2AE35 /* SceneDelegate.swift */,
 				2A85326D26C10E9D00A2AE35 /* ViewController.swift */,
+				2A8532A326C25E5900A2AE35 /* DatePickerViewController.swift */,
 				2A85328926C24F8300A2AE35 /* DateViewController.swift */,
 				2A85328B26C25A4600A2AE35 /* ImageViewController.swift */,
 				2A85326F26C10E9D00A2AE35 /* Main.storyboard */,
@@ -139,11 +172,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A85329D26C25E2400A2AE35 /* 2.jpg in Resources */,
+				2A85329C26C25E2400A2AE35 /* 8.jpg in Resources */,
+				2A85329F26C25E2400A2AE35 /* 6.jpg in Resources */,
+				2A85329A26C25E2400A2AE35 /* 4.jpg in Resources */,
 				2A85328326C24E2900A2AE35 /* lamp_on.png in Resources */,
 				2A85327626C10E9E00A2AE35 /* LaunchScreen.storyboard in Resources */,
+				2A8532A226C25E2400A2AE35 /* 10.jpg in Resources */,
 				2A85328426C24E2900A2AE35 /* lamp_off.png in Resources */,
 				2A85328E26C25B1700A2AE35 /* File.png in Resources */,
 				2A85327326C10E9E00A2AE35 /* Assets.xcassets in Resources */,
+				2A8532A026C25E2400A2AE35 /* 9.jpg in Resources */,
+				2A85329B26C25E2400A2AE35 /* 1.jpg in Resources */,
+				2A85329E26C25E2400A2AE35 /* 5.jpg in Resources */,
+				2A8532A126C25E2400A2AE35 /* 7.jpg in Resources */,
+				2A85329926C25E2400A2AE35 /* 3.jpg in Resources */,
 				2A85327126C10E9D00A2AE35 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -157,6 +200,7 @@
 			files = (
 				2A85328A26C24F8300A2AE35 /* DateViewController.swift in Sources */,
 				2A85326E26C10E9D00A2AE35 /* ViewController.swift in Sources */,
+				2A8532A426C25E5900A2AE35 /* DatePickerViewController.swift in Sources */,
 				2A85328C26C25A4600A2AE35 /* ImageViewController.swift in Sources */,
 				2A85326A26C10E9D00A2AE35 /* AppDelegate.swift in Sources */,
 				2A85326C26C10E9D00A2AE35 /* SceneDelegate.swift in Sources */,
