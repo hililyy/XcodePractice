@@ -111,12 +111,21 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ELe-4C-woL">
+                                <rect key="frame" x="158" y="162" width="30" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="확대"/>
+                                <connections>
+                                    <action selector="btnResizeImage:" destination="DB0-XL-j6l" eventType="touchUpInside" id="sVx-RV-AOU"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jpK-jt-eqF"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <navigationItem key="navigationItem" title="수정화면" id="tkU-fL-PMD"/>
                     <connections>
+                        <outlet property="btnResize" destination="ELe-4C-woL" id="2rX-NO-vuA"/>
                         <outlet property="lblWay" destination="19n-ai-TRo" id="zfh-Z7-jIQ"/>
                         <outlet property="swIsOn" destination="hiw-YR-O2V" id="KkQ-rx-aQC"/>
                         <outlet property="txtMessage" destination="mNm-t0-VcV" id="YGc-vj-7xT"/>
